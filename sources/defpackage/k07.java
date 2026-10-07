@@ -1,0 +1,22 @@
+package defpackage;
+
+/* JADX INFO: loaded from: classes2.dex */
+public final class k07 extends nq4 {
+    public l07 d;
+    public /* synthetic */ Object e;
+    public final /* synthetic */ l07 f;
+    public int g;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public k07(l07 l07Var, lq4 lq4Var) {
+        super(lq4Var);
+        this.f = l07Var;
+    }
+
+    @Override // defpackage.mq0
+    public final Object invokeSuspend(Object obj) {
+        this.e = obj;
+        this.g |= Integer.MIN_VALUE;
+        return this.f.emit(null, this);
+    }
+}

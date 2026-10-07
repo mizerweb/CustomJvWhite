@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator
+        android:interpolator="@drawable/_avd_handup__6_res_0x7f080055"
+        android:duration="167"
+        android:startOffset="0"
+        android:valueFrom="0"
+        android:valueTo="16"
+        android:valueType="floatType"
+        android:propertyName="rotation"/>
+    <objectAnimator
+        android:interpolator="@drawable/_avd_handup__7_res_0x7f080056"
+        android:duration="200"
+        android:startOffset="167"
+        android:valueFrom="16"
+        android:valueTo="-14"
+        android:valueType="floatType"
+        android:propertyName="rotation"/>
+    <objectAnimator
+        android:interpolator="@drawable/_avd_handup__8_res_0x7f080057"
+        android:duration="217"
+        android:startOffset="367"
+        android:valueFrom="-14"
+        android:valueTo="10"
+        android:valueType="floatType"
+        android:propertyName="rotation"/>
+    <objectAnimator
+        android:interpolator="@drawable/_avd_handup__9_res_0x7f080058"
+        android:duration="200"
+        android:startOffset="583"
+        android:valueFrom="10"
+        android:valueTo="-2"
+        android:valueType="floatType"
+        android:propertyName="rotation"/>
+    <objectAnimator
+        android:interpolator="@drawable/_avd_handup__10_res_0x7f08004f"
+        android:duration="217"
+        android:startOffset="783"
+        android:valueFrom="-2"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="rotation"/>
+</set>

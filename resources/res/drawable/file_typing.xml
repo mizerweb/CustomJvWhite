@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_file_typing__0_res_0x7f0801b4">
+    <target
+        android:name="_R_G_L_4_G"
+        android:animation="@drawable/_file_typing__1_res_0x7f0801b5"/>
+    <target
+        android:name="_R_G_L_4_G"
+        android:animation="@drawable/_file_typing__3_res_0x7f0801cb"/>
+    <target
+        android:name="_R_G_L_3_G_D_0_P_0"
+        android:animation="@drawable/_file_typing__8_res_0x7f0801e5"/>
+    <target
+        android:name="_R_G_L_3_G_N_2_T_0"
+        android:animation="@drawable/_file_typing__12_res_0x7f0801b8"/>
+    <target
+        android:name="_R_G_L_2_G_D_0_P_0"
+        android:animation="@drawable/_file_typing__19_res_0x7f0801bf"/>
+    <target
+        android:name="_R_G_L_2_G_N_2_T_0"
+        android:animation="@drawable/_file_typing__23_res_0x7f0801c4"/>
+    <target
+        android:name="_R_G_L_1_G_D_0_P_0"
+        android:animation="@drawable/_file_typing__30_res_0x7f0801cc"/>
+    <target
+        android:name="_R_G_L_1_G_D_0_P_0"
+        android:animation="@drawable/_file_typing__35_res_0x7f0801d1"/>
+    <target
+        android:name="_R_G_L_1_G"
+        android:animation="@drawable/_file_typing__40_res_0x7f0801d7"/>
+    <target
+        android:name="_R_G_L_0_G_D_0_P_0"
+        android:animation="@drawable/_file_typing__47_res_0x7f0801de"/>
+    <target
+        android:name="_R_G_L_0_G"
+        android:animation="@drawable/_file_typing__49_res_0x7f0801e0"/>
+</animated-vector>

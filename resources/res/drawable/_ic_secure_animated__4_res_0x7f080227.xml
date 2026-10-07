@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator
+        android:interpolator="@drawable/_ic_secure_animated__5_res_0x7f08022d"
+        android:duration="317"
+        android:startOffset="0"
+        android:valueFrom="0.95"
+        android:valueTo="0.95"
+        android:valueType="floatType"
+        android:propertyName="trimPathEnd"/>
+    <objectAnimator
+        android:interpolator="@drawable/_ic_secure_animated__6_res_0x7f08022e"
+        android:duration="500"
+        android:startOffset="317"
+        android:valueFrom="0.95"
+        android:valueTo="0.9"
+        android:valueType="floatType"
+        android:propertyName="trimPathEnd"/>
+</set>

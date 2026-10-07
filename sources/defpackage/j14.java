@@ -1,0 +1,276 @@
+package defpackage;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/* JADX INFO: loaded from: classes3.dex */
+public final /* synthetic */ class j14 implements cf7 {
+    public final /* synthetic */ int a;
+    public final /* synthetic */ long b;
+    public final /* synthetic */ long c;
+    public final /* synthetic */ g24 d;
+    public final /* synthetic */ wja e;
+
+    public /* synthetic */ j14(long j, long j2, g24 g24Var, wja wjaVar, int i) {
+        this.a = i;
+        this.b = j;
+        this.c = j2;
+        this.d = g24Var;
+        this.e = wjaVar;
+    }
+
+    @Override // defpackage.cf7
+    public final Object invoke(Object obj) throws Exception {
+        int i = this.a;
+        wja wjaVar = this.e;
+        g24 g24Var = this.d;
+        long j = this.c;
+        long j2 = this.b;
+        switch (i) {
+            case 0:
+                vxe vxeVarO0 = ((qxe) obj).O0("SELECT * FROM comments WHERE parent_chat_server_id = ? AND parent_message_server_id = ? AND inserted_from_msg_link = 0 AND status <> ? ORDER BY time ASC LIMIT ?");
+                try {
+                    vxeVarO0.c(1, j2);
+                    vxeVarO0.c(2, j);
+                    g24Var.a().getClass();
+                    vxeVarO0.c(3, wjaVar.a);
+                    vxeVarO0.c(4, 1L);
+                    int iE = qyj.E(vxeVarO0, "id");
+                    int iE2 = qyj.E(vxeVarO0, "server_id");
+                    int iE3 = qyj.E(vxeVarO0, "time");
+                    int iE4 = qyj.E(vxeVarO0, "update_time");
+                    int iE5 = qyj.E(vxeVarO0, "sender");
+                    int iE6 = qyj.E(vxeVarO0, "cid");
+                    int iE7 = qyj.E(vxeVarO0, "text");
+                    int iE8 = qyj.E(vxeVarO0, "delivery_status");
+                    int iE9 = qyj.E(vxeVarO0, "status");
+                    int iE10 = qyj.E(vxeVarO0, "status_in_process");
+                    int iE11 = qyj.E(vxeVarO0, "time_local");
+                    int iE12 = qyj.E(vxeVarO0, "error");
+                    int iE13 = qyj.E(vxeVarO0, "localized_error");
+                    int iE14 = qyj.E(vxeVarO0, "attaches");
+                    int iE15 = qyj.E(vxeVarO0, "media_type");
+                    int iE16 = qyj.E(vxeVarO0, "message_type");
+                    int iE17 = qyj.E(vxeVarO0, "detect_share");
+                    int iE18 = qyj.E(vxeVarO0, "msg_link_type");
+                    int iE19 = qyj.E(vxeVarO0, "msg_link_id");
+                    int iE20 = qyj.E(vxeVarO0, "inserted_from_msg_link");
+                    int iE21 = qyj.E(vxeVarO0, "msg_link_out_chat_id");
+                    int iE22 = qyj.E(vxeVarO0, "msg_link_out_post_id");
+                    int iE23 = qyj.E(vxeVarO0, "msg_link_out_msg_id");
+                    int iE24 = qyj.E(vxeVarO0, "options");
+                    int iE25 = qyj.E(vxeVarO0, "elements");
+                    int iE26 = qyj.E(vxeVarO0, "reactions");
+                    int iE27 = qyj.E(vxeVarO0, "reactions_update_time");
+                    int iE28 = qyj.E(vxeVarO0, "parent_chat_server_id");
+                    int iE29 = qyj.E(vxeVarO0, "parent_message_server_id");
+                    ArrayList arrayList = new ArrayList();
+                    while (vxeVarO0.M0()) {
+                        long j3 = vxeVarO0.getLong(iE);
+                        long j4 = vxeVarO0.getLong(iE2);
+                        long j5 = vxeVarO0.getLong(iE3);
+                        long j6 = vxeVarO0.getLong(iE4);
+                        long j7 = vxeVarO0.getLong(iE5);
+                        long j8 = vxeVarO0.getLong(iE6);
+                        String strB0 = vxeVarO0.isNull(iE7) ? null : vxeVarO0.B0(iE7);
+                        int i2 = (int) vxeVarO0.getLong(iE8);
+                        g24Var.a().getClass();
+                        xfa xfaVarB = dwa.b(i2);
+                        int i3 = (int) vxeVarO0.getLong(iE9);
+                        g24Var.a().getClass();
+                        wja wjaVarD = dwa.d(i3);
+                        boolean z = ((int) vxeVarO0.getLong(iE10)) != 0;
+                        long j9 = vxeVarO0.getLong(iE11);
+                        String strB1 = vxeVarO0.isNull(iE12) ? null : vxeVarO0.B0(iE12);
+                        String strB2 = vxeVarO0.isNull(iE13) ? null : vxeVarO0.B0(iE13);
+                        byte[] blob = vxeVarO0.isNull(iE14) ? null : vxeVarO0.getBlob(iE14);
+                        g24Var.a().getClass();
+                        c46 c46VarA = dwa.a(blob);
+                        int i4 = iE15;
+                        int i5 = iE9;
+                        int i6 = iE8;
+                        int i7 = (int) vxeVarO0.getLong(i4);
+                        int i8 = iE16;
+                        int i9 = (int) vxeVarO0.getLong(i8);
+                        g24Var.a().getClass();
+                        int iE30 = dwa.e(i9);
+                        int i10 = iE17;
+                        boolean z2 = ((int) vxeVarO0.getLong(i10)) != 0;
+                        iE17 = i10;
+                        int i11 = iE18;
+                        int i12 = (int) vxeVarO0.getLong(i11);
+                        int i13 = iE19;
+                        long j10 = vxeVarO0.getLong(i13);
+                        iE18 = i11;
+                        int i14 = iE20;
+                        boolean z3 = ((int) vxeVarO0.getLong(i14)) != 0;
+                        int i15 = iE21;
+                        long j11 = vxeVarO0.getLong(i15);
+                        int i16 = iE22;
+                        long j12 = vxeVarO0.getLong(i16);
+                        iE20 = i14;
+                        int i17 = iE23;
+                        long j13 = vxeVarO0.getLong(i17);
+                        iE23 = i17;
+                        iE21 = i15;
+                        iE22 = i16;
+                        int i18 = iE24;
+                        int i19 = (int) vxeVarO0.getLong(i18);
+                        int i20 = iE25;
+                        byte[] blob2 = vxeVarO0.getBlob(i20);
+                        g24Var.a().getClass();
+                        List listC = dwa.c(blob2);
+                        iE24 = i18;
+                        iE26 = iE26;
+                        kja kjaVarF = g24Var.a().f(vxeVarO0.isNull(iE26) ? null : vxeVarO0.getBlob(iE26));
+                        int i21 = iE27;
+                        long j14 = vxeVarO0.getLong(i21);
+                        int i22 = iE28;
+                        int i23 = iE7;
+                        int i24 = iE29;
+                        int i25 = iE6;
+                        arrayList.add(new uy3(j3, new q24(vxeVarO0.getLong(i22), vxeVarO0.getLong(i24)), j4, j5, j6, j7, j8, strB0, xfaVarB, wjaVarD, z, j9, strB1, strB2, c46VarA, i7, iE30, z2, i12, j10, z3, j11, j12, j13, i19, listC, kjaVarF, j14));
+                        iE8 = i6;
+                        iE9 = i5;
+                        iE16 = i8;
+                        iE19 = i13;
+                        iE25 = i20;
+                        iE27 = i21;
+                        iE6 = i25;
+                        iE = iE;
+                        iE15 = i4;
+                        iE7 = i23;
+                        iE29 = i24;
+                        iE28 = i22;
+                        iE2 = iE2;
+                        break;
+                    }
+                    return arrayList;
+                } finally {
+                    vxeVarO0.close();
+                }
+            default:
+                vxe vxeVarO1 = ((qxe) obj).O0("SELECT * FROM comments WHERE parent_chat_server_id = ? AND parent_message_server_id = ? AND inserted_from_msg_link = 0 AND status <> ? ORDER BY time DESC LIMIT ?");
+                try {
+                    vxeVarO1.c(1, j2);
+                    vxeVarO1.c(2, j);
+                    g24Var.a().getClass();
+                    vxeVarO1.c(3, wjaVar.a);
+                    vxeVarO1.c(4, 1L);
+                    int iE31 = qyj.E(vxeVarO1, "id");
+                    int iE32 = qyj.E(vxeVarO1, "server_id");
+                    int iE33 = qyj.E(vxeVarO1, "time");
+                    int iE34 = qyj.E(vxeVarO1, "update_time");
+                    int iE35 = qyj.E(vxeVarO1, "sender");
+                    int iE36 = qyj.E(vxeVarO1, "cid");
+                    int iE37 = qyj.E(vxeVarO1, "text");
+                    int iE38 = qyj.E(vxeVarO1, "delivery_status");
+                    int iE39 = qyj.E(vxeVarO1, "status");
+                    int iE40 = qyj.E(vxeVarO1, "status_in_process");
+                    int iE41 = qyj.E(vxeVarO1, "time_local");
+                    int iE42 = qyj.E(vxeVarO1, "error");
+                    int iE43 = qyj.E(vxeVarO1, "localized_error");
+                    int iE44 = qyj.E(vxeVarO1, "attaches");
+                    int iE45 = qyj.E(vxeVarO1, "media_type");
+                    int iE46 = qyj.E(vxeVarO1, "message_type");
+                    int iE47 = qyj.E(vxeVarO1, "detect_share");
+                    int iE48 = qyj.E(vxeVarO1, "msg_link_type");
+                    int iE49 = qyj.E(vxeVarO1, "msg_link_id");
+                    int iE50 = qyj.E(vxeVarO1, "inserted_from_msg_link");
+                    int iE51 = qyj.E(vxeVarO1, "msg_link_out_chat_id");
+                    int iE52 = qyj.E(vxeVarO1, "msg_link_out_post_id");
+                    int iE53 = qyj.E(vxeVarO1, "msg_link_out_msg_id");
+                    int iE54 = qyj.E(vxeVarO1, "options");
+                    int iE55 = qyj.E(vxeVarO1, "elements");
+                    int iE56 = qyj.E(vxeVarO1, "reactions");
+                    int iE57 = qyj.E(vxeVarO1, "reactions_update_time");
+                    int iE58 = qyj.E(vxeVarO1, "parent_chat_server_id");
+                    int iE59 = qyj.E(vxeVarO1, "parent_message_server_id");
+                    ArrayList arrayList2 = new ArrayList();
+                    while (vxeVarO1.M0()) {
+                        long j15 = vxeVarO1.getLong(iE31);
+                        long j16 = vxeVarO1.getLong(iE32);
+                        long j17 = vxeVarO1.getLong(iE33);
+                        long j18 = vxeVarO1.getLong(iE34);
+                        long j19 = vxeVarO1.getLong(iE35);
+                        long j20 = vxeVarO1.getLong(iE36);
+                        String strB3 = vxeVarO1.isNull(iE37) ? null : vxeVarO1.B0(iE37);
+                        int i26 = (int) vxeVarO1.getLong(iE38);
+                        g24Var.a().getClass();
+                        xfa xfaVarB2 = dwa.b(i26);
+                        int i27 = (int) vxeVarO1.getLong(iE39);
+                        g24Var.a().getClass();
+                        wja wjaVarD2 = dwa.d(i27);
+                        boolean z4 = ((int) vxeVarO1.getLong(iE40)) != 0;
+                        long j21 = vxeVarO1.getLong(iE41);
+                        String strB4 = vxeVarO1.isNull(iE42) ? null : vxeVarO1.B0(iE42);
+                        String strB5 = vxeVarO1.isNull(iE43) ? null : vxeVarO1.B0(iE43);
+                        byte[] blob3 = vxeVarO1.isNull(iE44) ? null : vxeVarO1.getBlob(iE44);
+                        g24Var.a().getClass();
+                        c46 c46VarA2 = dwa.a(blob3);
+                        int i28 = iE45;
+                        int i29 = iE40;
+                        int i30 = iE39;
+                        int i31 = (int) vxeVarO1.getLong(i28);
+                        int i32 = iE46;
+                        int i33 = (int) vxeVarO1.getLong(i32);
+                        g24Var.a().getClass();
+                        int iE60 = dwa.e(i33);
+                        int i34 = iE47;
+                        boolean z5 = ((int) vxeVarO1.getLong(i34)) != 0;
+                        iE47 = i34;
+                        int i35 = iE48;
+                        int i36 = (int) vxeVarO1.getLong(i35);
+                        int i37 = iE49;
+                        long j22 = vxeVarO1.getLong(i37);
+                        iE48 = i35;
+                        int i38 = iE50;
+                        boolean z6 = ((int) vxeVarO1.getLong(i38)) != 0;
+                        int i39 = iE51;
+                        long j23 = vxeVarO1.getLong(i39);
+                        int i40 = iE52;
+                        long j24 = vxeVarO1.getLong(i40);
+                        iE50 = i38;
+                        int i41 = iE53;
+                        long j25 = vxeVarO1.getLong(i41);
+                        iE53 = i41;
+                        iE51 = i39;
+                        iE52 = i40;
+                        int i42 = iE54;
+                        int i43 = (int) vxeVarO1.getLong(i42);
+                        int i44 = iE55;
+                        byte[] blob4 = vxeVarO1.getBlob(i44);
+                        g24Var.a().getClass();
+                        List listC2 = dwa.c(blob4);
+                        iE54 = i42;
+                        iE56 = iE56;
+                        kja kjaVarF2 = g24Var.a().f(vxeVarO1.isNull(iE56) ? null : vxeVarO1.getBlob(iE56));
+                        int i45 = iE57;
+                        long j26 = vxeVarO1.getLong(i45);
+                        int i46 = iE58;
+                        int i47 = iE38;
+                        int i48 = iE59;
+                        int i49 = iE37;
+                        arrayList2.add(new uy3(j15, new q24(vxeVarO1.getLong(i46), vxeVarO1.getLong(i48)), j16, j17, j18, j19, j20, strB3, xfaVarB2, wjaVarD2, z4, j21, strB4, strB5, c46VarA2, i31, iE60, z5, i36, j22, z6, j23, j24, j25, i43, listC2, kjaVarF2, j26));
+                        iE39 = i30;
+                        iE45 = i28;
+                        iE46 = i32;
+                        iE49 = i37;
+                        iE55 = i44;
+                        iE57 = i45;
+                        iE37 = i49;
+                        iE31 = iE31;
+                        iE40 = i29;
+                        iE38 = i47;
+                        iE59 = i48;
+                        iE58 = i46;
+                        iE32 = iE32;
+                        break;
+                    }
+                    return arrayList2;
+                } finally {
+                    vxeVarO1.close();
+                }
+        }
+    }
+}

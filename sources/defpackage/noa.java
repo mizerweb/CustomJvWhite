@@ -1,0 +1,408 @@
+package defpackage;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+
+/* JADX INFO: loaded from: classes3.dex */
+public final /* synthetic */ class noa implements cf7 {
+    public final /* synthetic */ int a;
+    public final /* synthetic */ String b;
+    public final /* synthetic */ long c;
+    public final /* synthetic */ toa d;
+    public final /* synthetic */ Object e;
+    public final /* synthetic */ Collection f;
+    public final /* synthetic */ int g;
+
+    public /* synthetic */ noa(String str, toa toaVar, List list, long j, List list2, int i) {
+        this.a = 2;
+        this.b = str;
+        this.d = toaVar;
+        this.e = list;
+        this.c = j;
+        this.f = list2;
+        this.g = i;
+    }
+
+    @Override // defpackage.cf7
+    public final Object invoke(Object obj) throws Exception {
+        int i = this.a;
+        int i2 = this.g;
+        Collection collection = this.f;
+        long j = this.c;
+        Object obj2 = this.e;
+        toa toaVar = this.d;
+        String str = this.b;
+        switch (i) {
+            case 0:
+                wja wjaVar = (wja) obj2;
+                Set set = (Set) collection;
+                vxe vxeVarO0 = ((qxe) obj).O0(str);
+                try {
+                    vxeVarO0.c(1, j);
+                    toaVar.e().getClass();
+                    vxeVarO0.c(2, wjaVar.a);
+                    int i3 = 3;
+                    for (Iterator it = set.iterator(); it.hasNext(); it = it) {
+                        vxeVarO0.c(i3, ((Number) it.next()).intValue());
+                        i3++;
+                    }
+                    vxeVarO0.c(i2 + 3, 1L);
+                    int iE = qyj.E(vxeVarO0, "id");
+                    int iE2 = qyj.E(vxeVarO0, "server_id");
+                    int iE3 = qyj.E(vxeVarO0, "time");
+                    int iE4 = qyj.E(vxeVarO0, "update_time");
+                    int iE5 = qyj.E(vxeVarO0, "sender");
+                    int iE6 = qyj.E(vxeVarO0, "cid");
+                    int iE7 = qyj.E(vxeVarO0, "text");
+                    int iE8 = qyj.E(vxeVarO0, "delivery_status");
+                    int iE9 = qyj.E(vxeVarO0, "status");
+                    int iE10 = qyj.E(vxeVarO0, "status_in_process");
+                    int iE11 = qyj.E(vxeVarO0, "time_local");
+                    int iE12 = qyj.E(vxeVarO0, "error");
+                    int iE13 = qyj.E(vxeVarO0, "localized_error");
+                    int iE14 = qyj.E(vxeVarO0, "attaches");
+                    int iE15 = qyj.E(vxeVarO0, "media_type");
+                    int iE16 = qyj.E(vxeVarO0, "detect_share");
+                    int iE17 = qyj.E(vxeVarO0, "msg_link_type");
+                    int iE18 = qyj.E(vxeVarO0, "msg_link_id");
+                    int iE19 = qyj.E(vxeVarO0, "inserted_from_msg_link");
+                    int iE20 = qyj.E(vxeVarO0, "msg_link_chat_id");
+                    int iE21 = qyj.E(vxeVarO0, "msg_link_chat_name");
+                    int iE22 = qyj.E(vxeVarO0, "msg_link_chat_link");
+                    int iE23 = qyj.E(vxeVarO0, "msg_link_chat_icon_url");
+                    int iE24 = qyj.E(vxeVarO0, "msg_link_chat_access_type");
+                    int iE25 = qyj.E(vxeVarO0, "msg_link_out_chat_id");
+                    int iE26 = qyj.E(vxeVarO0, "msg_link_out_msg_id");
+                    int iE27 = qyj.E(vxeVarO0, "type");
+                    int iE28 = qyj.E(vxeVarO0, "chat_id");
+                    int iE29 = qyj.E(vxeVarO0, "channel_views");
+                    int iE30 = qyj.E(vxeVarO0, "channel_forwards");
+                    int iE31 = qyj.E(vxeVarO0, "view_time");
+                    int iE32 = qyj.E(vxeVarO0, "options");
+                    int iE33 = qyj.E(vxeVarO0, "live_until");
+                    int iE34 = qyj.E(vxeVarO0, "elements");
+                    int iE35 = qyj.E(vxeVarO0, "reactions");
+                    int iE36 = qyj.E(vxeVarO0, "delayed_attrs_time_to_fire");
+                    int iE37 = qyj.E(vxeVarO0, "delayed_attrs_notify_sender");
+                    int iE38 = qyj.E(vxeVarO0, "reactions_update_time");
+                    ArrayList arrayList = new ArrayList();
+                    while (vxeVarO0.M0()) {
+                        long j2 = vxeVarO0.getLong(iE);
+                        long j3 = vxeVarO0.getLong(iE2);
+                        long j4 = vxeVarO0.getLong(iE3);
+                        long j5 = vxeVarO0.getLong(iE4);
+                        long j6 = vxeVarO0.getLong(iE5);
+                        long j7 = vxeVarO0.getLong(iE6);
+                        String strB0 = vxeVarO0.isNull(iE7) ? null : vxeVarO0.B0(iE7);
+                        int i4 = (int) vxeVarO0.getLong(iE8);
+                        toaVar.e().getClass();
+                        xfa xfaVarB = dwa.b(i4);
+                        int i5 = (int) vxeVarO0.getLong(iE9);
+                        toaVar.e().getClass();
+                        wja wjaVarD = dwa.d(i5);
+                        boolean z = ((int) vxeVarO0.getLong(iE10)) != 0;
+                        long j8 = vxeVarO0.getLong(iE11);
+                        String strB1 = vxeVarO0.isNull(iE12) ? null : vxeVarO0.B0(iE12);
+                        String strB2 = vxeVarO0.isNull(iE13) ? null : vxeVarO0.B0(iE13);
+                        byte[] blob = vxeVarO0.isNull(iE14) ? null : vxeVarO0.getBlob(iE14);
+                        toaVar.e().getClass();
+                        c46 c46VarA = dwa.a(blob);
+                        int i6 = iE15;
+                        int i7 = iE10;
+                        int i8 = (int) vxeVarO0.getLong(i6);
+                        int i9 = iE16;
+                        boolean z2 = ((int) vxeVarO0.getLong(i9)) != 0;
+                        iE16 = i9;
+                        int i10 = iE17;
+                        int i11 = (int) vxeVarO0.getLong(i10);
+                        long j9 = vxeVarO0.getLong(iE18);
+                        iE17 = i10;
+                        int i12 = iE19;
+                        boolean z3 = ((int) vxeVarO0.getLong(i12)) != 0;
+                        iE20 = iE20;
+                        long j10 = vxeVarO0.getLong(iE20);
+                        iE21 = iE21;
+                        String strB3 = vxeVarO0.isNull(iE21) ? null : vxeVarO0.B0(iE21);
+                        iE19 = i12;
+                        int i13 = iE22;
+                        String strB4 = vxeVarO0.isNull(i13) ? null : vxeVarO0.B0(i13);
+                        iE22 = i13;
+                        int i14 = iE23;
+                        String strB5 = vxeVarO0.isNull(i14) ? null : vxeVarO0.B0(i14);
+                        iE23 = i14;
+                        int i15 = iE24;
+                        Integer numValueOf = vxeVarO0.isNull(i15) ? null : Integer.valueOf((int) vxeVarO0.getLong(i15));
+                        toaVar.d().getClass();
+                        int iA = vo3.a(numValueOf);
+                        int i16 = iE25;
+                        long j11 = vxeVarO0.getLong(i16);
+                        int i17 = iE26;
+                        long j12 = vxeVarO0.getLong(i17);
+                        iE24 = i15;
+                        iE25 = i16;
+                        iE26 = i17;
+                        int i18 = iE27;
+                        int i19 = (int) vxeVarO0.getLong(i18);
+                        toaVar.e().getClass();
+                        int iE39 = dwa.e(i19);
+                        int i20 = iE28;
+                        long j13 = vxeVarO0.getLong(i20);
+                        iE27 = i18;
+                        iE28 = i20;
+                        int i21 = iE29;
+                        int i22 = (int) vxeVarO0.getLong(i21);
+                        int i23 = iE9;
+                        int i24 = iE30;
+                        int i25 = (int) vxeVarO0.getLong(i24);
+                        int i26 = iE31;
+                        long j14 = vxeVarO0.getLong(i26);
+                        int i27 = iE32;
+                        int i28 = (int) vxeVarO0.getLong(i27);
+                        int i29 = iE33;
+                        long j15 = vxeVarO0.getLong(i29);
+                        iE32 = i27;
+                        int i30 = iE34;
+                        byte[] blob2 = vxeVarO0.getBlob(i30);
+                        toaVar.e().getClass();
+                        List listC = dwa.c(blob2);
+                        iE34 = i30;
+                        iE35 = iE35;
+                        kja kjaVarF = toaVar.e().f(vxeVarO0.isNull(iE35) ? null : vxeVarO0.getBlob(iE35));
+                        int i31 = iE36;
+                        Long lValueOf = vxeVarO0.isNull(i31) ? null : Long.valueOf(vxeVarO0.getLong(i31));
+                        int i32 = iE37;
+                        Integer numValueOf2 = vxeVarO0.isNull(i32) ? null : Integer.valueOf((int) vxeVarO0.getLong(i32));
+                        Boolean boolValueOf = numValueOf2 != null ? Boolean.valueOf(numValueOf2.intValue() != 0) : null;
+                        int i33 = iE38;
+                        arrayList.add(new gga(j2, j3, j4, j5, j6, j7, strB0, xfaVarB, wjaVarD, z, j8, strB1, strB2, c46VarA, i8, z2, i11, j9, z3, j10, strB3, strB4, strB5, iA, j11, j12, iE39, j13, i22, i25, j14, i28, j15, listC, kjaVarF, lValueOf, boolValueOf, vxeVarO0.getLong(i33)));
+                        iE37 = i32;
+                        iE38 = i33;
+                        iE9 = i23;
+                        iE29 = i21;
+                        iE30 = i24;
+                        iE31 = i26;
+                        iE33 = i29;
+                        iE2 = iE2;
+                        iE10 = i7;
+                        iE36 = i31;
+                        iE = iE;
+                        iE15 = i6;
+                        break;
+                    }
+                    return arrayList;
+                } finally {
+                    vxeVarO0.close();
+                }
+            case 1:
+                wja wjaVar2 = (wja) obj2;
+                Set set2 = (Set) collection;
+                vxe vxeVarO1 = ((qxe) obj).O0(str);
+                try {
+                    vxeVarO1.c(1, j);
+                    toaVar.e().getClass();
+                    vxeVarO1.c(2, wjaVar2.a);
+                    Iterator it2 = set2.iterator();
+                    int i34 = 3;
+                    while (it2.hasNext()) {
+                        vxeVarO1.c(i34, ((Number) it2.next()).intValue());
+                        i34++;
+                    }
+                    vxeVarO1.c(i2 + 3, 1L);
+                    int iE40 = qyj.E(vxeVarO1, "id");
+                    int iE41 = qyj.E(vxeVarO1, "server_id");
+                    int iE42 = qyj.E(vxeVarO1, "time");
+                    int iE43 = qyj.E(vxeVarO1, "update_time");
+                    int iE44 = qyj.E(vxeVarO1, "sender");
+                    int iE45 = qyj.E(vxeVarO1, "cid");
+                    int iE46 = qyj.E(vxeVarO1, "text");
+                    int iE47 = qyj.E(vxeVarO1, "delivery_status");
+                    int iE48 = qyj.E(vxeVarO1, "status");
+                    int iE49 = qyj.E(vxeVarO1, "status_in_process");
+                    int iE50 = qyj.E(vxeVarO1, "time_local");
+                    int iE51 = qyj.E(vxeVarO1, "error");
+                    int iE52 = qyj.E(vxeVarO1, "localized_error");
+                    int iE53 = qyj.E(vxeVarO1, "attaches");
+                    int iE54 = qyj.E(vxeVarO1, "media_type");
+                    int iE55 = qyj.E(vxeVarO1, "detect_share");
+                    int iE56 = qyj.E(vxeVarO1, "msg_link_type");
+                    int iE57 = qyj.E(vxeVarO1, "msg_link_id");
+                    int iE58 = qyj.E(vxeVarO1, "inserted_from_msg_link");
+                    int iE59 = qyj.E(vxeVarO1, "msg_link_chat_id");
+                    int iE60 = qyj.E(vxeVarO1, "msg_link_chat_name");
+                    int iE61 = qyj.E(vxeVarO1, "msg_link_chat_link");
+                    int iE62 = qyj.E(vxeVarO1, "msg_link_chat_icon_url");
+                    int iE63 = qyj.E(vxeVarO1, "msg_link_chat_access_type");
+                    int iE64 = qyj.E(vxeVarO1, "msg_link_out_chat_id");
+                    int iE65 = qyj.E(vxeVarO1, "msg_link_out_msg_id");
+                    int iE66 = qyj.E(vxeVarO1, "type");
+                    int iE67 = qyj.E(vxeVarO1, "chat_id");
+                    int iE68 = qyj.E(vxeVarO1, "channel_views");
+                    int iE69 = qyj.E(vxeVarO1, "channel_forwards");
+                    int iE70 = qyj.E(vxeVarO1, "view_time");
+                    int iE71 = qyj.E(vxeVarO1, "options");
+                    int iE72 = qyj.E(vxeVarO1, "live_until");
+                    int iE73 = qyj.E(vxeVarO1, "elements");
+                    int iE74 = qyj.E(vxeVarO1, "reactions");
+                    int iE75 = qyj.E(vxeVarO1, "delayed_attrs_time_to_fire");
+                    int iE76 = qyj.E(vxeVarO1, "delayed_attrs_notify_sender");
+                    int iE77 = qyj.E(vxeVarO1, "reactions_update_time");
+                    ArrayList arrayList2 = new ArrayList();
+                    while (vxeVarO1.M0()) {
+                        long j16 = vxeVarO1.getLong(iE40);
+                        long j17 = vxeVarO1.getLong(iE41);
+                        long j18 = vxeVarO1.getLong(iE42);
+                        long j19 = vxeVarO1.getLong(iE43);
+                        long j20 = vxeVarO1.getLong(iE44);
+                        long j21 = vxeVarO1.getLong(iE45);
+                        String strB6 = vxeVarO1.isNull(iE46) ? null : vxeVarO1.B0(iE46);
+                        int i35 = (int) vxeVarO1.getLong(iE47);
+                        toaVar.e().getClass();
+                        xfa xfaVarB2 = dwa.b(i35);
+                        int i36 = (int) vxeVarO1.getLong(iE48);
+                        toaVar.e().getClass();
+                        wja wjaVarD2 = dwa.d(i36);
+                        boolean z4 = ((int) vxeVarO1.getLong(iE49)) != 0;
+                        long j22 = vxeVarO1.getLong(iE50);
+                        String strB7 = vxeVarO1.isNull(iE51) ? null : vxeVarO1.B0(iE51);
+                        String strB8 = vxeVarO1.isNull(iE52) ? null : vxeVarO1.B0(iE52);
+                        byte[] blob3 = vxeVarO1.isNull(iE53) ? null : vxeVarO1.getBlob(iE53);
+                        toaVar.e().getClass();
+                        c46 c46VarA2 = dwa.a(blob3);
+                        int i37 = iE54;
+                        int i38 = iE49;
+                        int i39 = (int) vxeVarO1.getLong(i37);
+                        int i40 = iE55;
+                        boolean z5 = ((int) vxeVarO1.getLong(i40)) != 0;
+                        int i41 = iE56;
+                        int i42 = (int) vxeVarO1.getLong(i41);
+                        int i43 = iE57;
+                        long j23 = vxeVarO1.getLong(i43);
+                        int i44 = iE58;
+                        boolean z6 = ((int) vxeVarO1.getLong(i44)) != 0;
+                        int i45 = iE59;
+                        long j24 = vxeVarO1.getLong(i45);
+                        int i46 = iE60;
+                        String strB9 = vxeVarO1.isNull(i46) ? null : vxeVarO1.B0(i46);
+                        int i47 = iE61;
+                        String strB10 = vxeVarO1.isNull(i47) ? null : vxeVarO1.B0(i47);
+                        iE61 = i47;
+                        int i48 = iE62;
+                        String strB11 = vxeVarO1.isNull(i48) ? null : vxeVarO1.B0(i48);
+                        iE62 = i48;
+                        int i49 = iE63;
+                        Integer numValueOf3 = vxeVarO1.isNull(i49) ? null : Integer.valueOf((int) vxeVarO1.getLong(i49));
+                        toaVar.d().getClass();
+                        int iA2 = vo3.a(numValueOf3);
+                        int i50 = iE64;
+                        long j25 = vxeVarO1.getLong(i50);
+                        int i51 = iE65;
+                        long j26 = vxeVarO1.getLong(i51);
+                        int i52 = iE66;
+                        int i53 = (int) vxeVarO1.getLong(i52);
+                        toaVar.e().getClass();
+                        int iE78 = dwa.e(i53);
+                        int i54 = iE67;
+                        long j27 = vxeVarO1.getLong(i54);
+                        int i55 = iE68;
+                        int i56 = (int) vxeVarO1.getLong(i55);
+                        int i57 = iE69;
+                        int i58 = iE48;
+                        int i59 = (int) vxeVarO1.getLong(i57);
+                        int i60 = iE70;
+                        long j28 = vxeVarO1.getLong(i60);
+                        int i61 = iE71;
+                        int i62 = (int) vxeVarO1.getLong(i61);
+                        int i63 = iE72;
+                        long j29 = vxeVarO1.getLong(i63);
+                        iE71 = i61;
+                        int i64 = iE73;
+                        byte[] blob4 = vxeVarO1.getBlob(i64);
+                        toaVar.e().getClass();
+                        List listC2 = dwa.c(blob4);
+                        iE73 = i64;
+                        iE74 = iE74;
+                        kja kjaVarF2 = toaVar.e().f(vxeVarO1.isNull(iE74) ? null : vxeVarO1.getBlob(iE74));
+                        int i65 = iE75;
+                        Long lValueOf2 = vxeVarO1.isNull(i65) ? null : Long.valueOf(vxeVarO1.getLong(i65));
+                        int i66 = iE76;
+                        Integer numValueOf4 = vxeVarO1.isNull(i66) ? null : Integer.valueOf((int) vxeVarO1.getLong(i66));
+                        Boolean boolValueOf2 = numValueOf4 != null ? Boolean.valueOf(numValueOf4.intValue() != 0) : null;
+                        int i67 = iE77;
+                        arrayList2.add(new gga(j16, j17, j18, j19, j20, j21, strB6, xfaVarB2, wjaVarD2, z4, j22, strB7, strB8, c46VarA2, i39, z5, i42, j23, z6, j24, strB9, strB10, strB11, iA2, j25, j26, iE78, j27, i56, i59, j28, i62, j29, listC2, kjaVarF2, lValueOf2, boolValueOf2, vxeVarO1.getLong(i67)));
+                        iE76 = i66;
+                        iE77 = i67;
+                        iE48 = i58;
+                        iE69 = i57;
+                        iE70 = i60;
+                        iE72 = i63;
+                        iE41 = iE41;
+                        iE49 = i38;
+                        iE54 = i37;
+                        iE75 = i65;
+                        iE55 = i40;
+                        iE56 = i41;
+                        iE57 = i43;
+                        iE58 = i44;
+                        iE59 = i45;
+                        iE60 = i46;
+                        iE63 = i49;
+                        iE64 = i50;
+                        iE65 = i51;
+                        iE66 = i52;
+                        iE67 = i54;
+                        iE40 = iE40;
+                        iE68 = i55;
+                        break;
+                    }
+                    return arrayList2;
+                } finally {
+                    vxeVarO1.close();
+                }
+            default:
+                List list = (List) obj2;
+                List list2 = (List) collection;
+                vxe vxeVarO2 = ((qxe) obj).O0(str);
+                try {
+                    toaVar.e().getClass();
+                    vxeVarO2.d(1, dga.b(list));
+                    vxeVarO2.c(2, j);
+                    Iterator it3 = list2.iterator();
+                    int i68 = 3;
+                    while (it3.hasNext()) {
+                        vxeVarO2.c(i68, ((Number) it3.next()).longValue());
+                        i68++;
+                    }
+                    int i69 = i2 + 3;
+                    Iterator it4 = list2.iterator();
+                    int i70 = i69;
+                    while (it4.hasNext()) {
+                        vxeVarO2.c(i70, ((Number) it4.next()).longValue());
+                        i70++;
+                    }
+                    int i71 = i69 + i2;
+                    Iterator it5 = list2.iterator();
+                    while (it5.hasNext()) {
+                        vxeVarO2.c(i71, ((Number) it5.next()).longValue());
+                        i71++;
+                    }
+                    vxeVarO2.M0();
+                    return sbi.a;
+                } finally {
+                    vxeVarO2.close();
+                }
+        }
+    }
+
+    public /* synthetic */ noa(String str, long j, toa toaVar, wja wjaVar, Set set, int i, int i2) {
+        this.a = i2;
+        this.b = str;
+        this.c = j;
+        this.d = toaVar;
+        this.e = wjaVar;
+        this.f = set;
+        this.g = i;
+    }
+}

@@ -1,0 +1,28 @@
+package defpackage;
+
+import org.webrtc.EglThread;
+
+/* JADX INFO: loaded from: classes3.dex */
+public final /* synthetic */ class o36 implements Runnable {
+    public final /* synthetic */ int a;
+    public final /* synthetic */ EglThread b;
+
+    public /* synthetic */ o36(EglThread eglThread, int i) {
+        this.a = i;
+        this.b = eglThread;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        int i = this.a;
+        EglThread eglThread = this.b;
+        switch (i) {
+            case 0:
+                eglThread.lambda$onRenderWindowOpen$2();
+                break;
+            default:
+                eglThread.lambda$onRenderWindowClose$3();
+                break;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator
+        android:interpolator="@drawable/_file_typing__41_res_0x7f0801d8"
+        android:duration="250"
+        android:startOffset="0"
+        android:propertyName="translateXY"
+        android:pathData="M 83,80C 83,80 83,-50 83,-50"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+    <objectAnimator
+        android:interpolator="@drawable/_file_typing__42_res_0x7f0801d9"
+        android:duration="17"
+        android:startOffset="250"
+        android:propertyName="translateXY"
+        android:pathData="M 83,-50C 83,-50 -47,-50 -47,-50"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+    <objectAnimator
+        android:interpolator="@drawable/_file_typing__43_res_0x7f0801da"
+        android:duration="17"
+        android:startOffset="267"
+        android:propertyName="translateXY"
+        android:pathData="M -47,-50C -47,-50 -47,210 -47,210"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+    <objectAnimator
+        android:interpolator="@drawable/_file_typing__44_res_0x7f0801db"
+        android:duration="17"
+        android:startOffset="283"
+        android:propertyName="translateXY"
+        android:pathData="M -47,210C -47,210 83,210 83,210"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+    <objectAnimator
+        android:interpolator="@drawable/_file_typing__45_res_0x7f0801dc"
+        android:duration="450"
+        android:startOffset="300"
+        android:propertyName="translateXY"
+        android:pathData="M 83,210C 83,210 83,80 83,80"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+    <objectAnimator
+        android:interpolator="@drawable/_file_typing__46_res_0x7f0801dd"
+        android:duration="250"
+        android:startOffset="750"
+        android:propertyName="translateXY"
+        android:pathData="M 83,80C 83,80 83,80 83,80"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+</set>

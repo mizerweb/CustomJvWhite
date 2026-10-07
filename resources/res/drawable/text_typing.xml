@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_text_typing__0_res_0x7f0803f2">
+    <target
+        android:name="dotL"
+        android:animation="@drawable/_text_typing__1_res_0x7f0803f3"/>
+    <target
+        android:name="dotM"
+        android:animation="@drawable/_text_typing__2_res_0x7f0803f4"/>
+    <target
+        android:name="dotR"
+        android:animation="@drawable/_text_typing__3_res_0x7f0803f5"/>
+</animated-vector>

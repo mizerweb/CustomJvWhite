@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_avd_delete_hover_in__0_res_0x7f080000">
+    <target
+        android:name="_R_G_L_2_G_D_0_P_0"
+        android:animation="@drawable/_avd_delete_hover_in__1_res_0x7f080001"/>
+    <target
+        android:name="_R_G_L_2_G_D_0_P_0"
+        android:animation="@drawable/_avd_delete_hover_in__3_res_0x7f08000c"/>
+    <target
+        android:name="_R_G_L_2_G_N_1_T_0"
+        android:animation="@drawable/_avd_delete_hover_in__5_res_0x7f08000e"/>
+    <target
+        android:name="_R_G_L_1_G_T_1"
+        android:animation="@drawable/_avd_delete_hover_in__8_res_0x7f080011"/>
+    <target
+        android:name="_R_G_L_1_G_N_1_T_0"
+        android:animation="@drawable/_avd_delete_hover_in__10_res_0x7f080002"/>
+    <target
+        android:name="_R_G_L_0_G"
+        android:animation="@drawable/_avd_delete_hover_in__13_res_0x7f080005"/>
+    <target
+        android:name="_R_G_L_0_G_N_1_T_0"
+        android:animation="@drawable/_avd_delete_hover_in__15_res_0x7f080007"/>
+    <target
+        android:name="time_group"
+        android:animation="@drawable/_avd_delete_hover_in__18_res_0x7f08000a"/>
+</animated-vector>

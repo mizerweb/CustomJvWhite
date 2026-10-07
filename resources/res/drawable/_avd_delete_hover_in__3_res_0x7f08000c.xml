@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator
+        android:interpolator="@drawable/_avd_delete_hover_in__4_res_0x7f08000d"
+        android:duration="333"
+        android:startOffset="0"
+        android:valueFrom="0.32"
+        android:valueTo="0.64"
+        android:valueType="floatType"
+        android:propertyName="fillAlpha"/>
+</set>

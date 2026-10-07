@@ -1,0 +1,13 @@
+package one.me.android.concurrent;
+
+import android.app.Service;
+import android.content.Intent;
+import android.os.IBinder;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class UseSystemThreadPoolQueueFeature$ToggleService extends Service {
+    @Override // android.app.Service
+    public final IBinder onBind(Intent intent) {
+        return null;
+    }
+}

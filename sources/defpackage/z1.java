@@ -1,0 +1,56 @@
+package defpackage;
+
+import java.util.ListIterator;
+
+/* JADX INFO: loaded from: classes4.dex */
+public final class z1 extends y1 implements ListIterator {
+    public final /* synthetic */ b2 d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public z1(b2 b2Var, int i) {
+        super(0, b2Var);
+        this.d = b2Var;
+        int size = b2Var.getSize();
+        if (i < 0 || i > size) {
+            c.r(qt4.l("index: ", i, size, ", size: "));
+            throw null;
+        }
+        this.b = i;
+    }
+
+    @Override // java.util.ListIterator
+    public final void add(Object obj) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    @Override // java.util.ListIterator
+    public final boolean hasPrevious() {
+        return this.b > 0;
+    }
+
+    @Override // java.util.ListIterator
+    public final int nextIndex() {
+        return this.b;
+    }
+
+    @Override // java.util.ListIterator
+    public final Object previous() {
+        if (!hasPrevious()) {
+            qr7.d();
+            return null;
+        }
+        int i = this.b - 1;
+        this.b = i;
+        return this.d.get(i);
+    }
+
+    @Override // java.util.ListIterator
+    public final int previousIndex() {
+        return this.b - 1;
+    }
+
+    @Override // java.util.ListIterator
+    public final void set(Object obj) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator
+        android:interpolator="@drawable/_ic_secure_animated__32_res_0x7f08021f"
+        android:duration="300"
+        android:startOffset="0"
+        android:propertyName="translateXY"
+        android:pathData="M 14,14C 14,14 14,14 14,14"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+    <objectAnimator
+        android:interpolator="@drawable/_ic_secure_animated__33_res_0x7f080220"
+        android:duration="333"
+        android:startOffset="300"
+        android:propertyName="translateXY"
+        android:pathData="M 14,14C 14,14 14,14 14,14"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+    <objectAnimator
+        android:interpolator="@drawable/_ic_secure_animated__34_res_0x7f080221"
+        android:duration="167"
+        android:startOffset="633"
+        android:propertyName="translateXY"
+        android:pathData="M 14,14C 14,14 14,15 14,15"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+    <objectAnimator
+        android:interpolator="@drawable/_ic_secure_animated__35_res_0x7f080222"
+        android:duration="167"
+        android:startOffset="800"
+        android:propertyName="translateXY"
+        android:pathData="M 14,15C 14,15 14,14 14,14"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+</set>

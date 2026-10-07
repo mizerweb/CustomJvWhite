@@ -1,0 +1,62 @@
+package defpackage;
+
+/* JADX INFO: loaded from: classes3.dex */
+public abstract /* synthetic */ class cgi {
+    public static final /* synthetic */ int[] $EnumSwitchMapping$0;
+    public static final /* synthetic */ int[] $EnumSwitchMapping$1;
+
+    static {
+        int[] iArr = new int[qt4.H(3).length];
+        try {
+            iArr[1] = 1;
+        } catch (NoSuchFieldError unused) {
+        }
+        try {
+            iArr[2] = 2;
+        } catch (NoSuchFieldError unused2) {
+        }
+        try {
+            iArr[0] = 3;
+        } catch (NoSuchFieldError unused3) {
+        }
+        $EnumSwitchMapping$0 = iArr;
+        int[] iArr2 = new int[oji.values().length];
+        try {
+            iArr2[1] = 1;
+        } catch (NoSuchFieldError unused4) {
+        }
+        try {
+            iArr2[7] = 2;
+        } catch (NoSuchFieldError unused5) {
+        }
+        try {
+            iArr2[5] = 3;
+        } catch (NoSuchFieldError unused6) {
+        }
+        try {
+            iArr2[9] = 4;
+        } catch (NoSuchFieldError unused7) {
+        }
+        try {
+            iArr2[2] = 5;
+        } catch (NoSuchFieldError unused8) {
+        }
+        try {
+            iArr2[8] = 6;
+        } catch (NoSuchFieldError unused9) {
+        }
+        try {
+            iArr2[3] = 7;
+        } catch (NoSuchFieldError unused10) {
+        }
+        try {
+            iArr2[4] = 8;
+        } catch (NoSuchFieldError unused11) {
+        }
+        try {
+            iArr2[6] = 9;
+        } catch (NoSuchFieldError unused12) {
+        }
+        $EnumSwitchMapping$1 = iArr2;
+    }
+}

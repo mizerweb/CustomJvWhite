@@ -1,0 +1,289 @@
+package defpackage;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+
+/* JADX INFO: loaded from: classes3.dex */
+public final class axg implements bxg {
+    public final String a;
+    public final int b;
+    public final long c;
+    public final ArrayList d;
+    public final int e;
+    public final int f;
+    public final i6a g;
+    public final String h;
+    public final long i;
+    public final long j;
+    public final boolean k;
+
+    public axg(String str, int i, long j, ArrayList arrayList, int i2, int i3, i6a i6aVar, String str2, long j2, long j3, boolean z) {
+        this.a = str;
+        this.b = i;
+        this.c = j;
+        this.d = arrayList;
+        this.e = i2;
+        this.f = i3;
+        this.g = i6aVar;
+        this.h = str2;
+        this.i = j2;
+        this.j = j3;
+        this.k = z;
+    }
+
+    @Override // defpackage.bxg
+    public final List a() {
+        return this.d;
+    }
+
+    @Override // defpackage.bxg
+    public final int b() {
+        return this.b;
+    }
+
+    @Override // defpackage.bxg
+    public final long c() {
+        return this.c;
+    }
+
+    @Override // defpackage.bxg
+    public final i6a d() {
+        return this.g;
+    }
+
+    @Override // defpackage.bxg
+    public final String e() {
+        return this.h;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj instanceof axg) {
+            axg axgVar = (axg) obj;
+            if (cqk.d(this.a, axgVar.a) && this.b == axgVar.b && this.c == axgVar.c && this.d.equals(axgVar.d) && this.e == axgVar.e && this.f == axgVar.f && cqk.d(this.g, axgVar.g) && cqk.d(this.h, axgVar.h) && this.i == axgVar.i && this.j == axgVar.j && this.k == axgVar.k) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override // defpackage.bxg
+    public final int f() {
+        return this.f;
+    }
+
+    @Override // defpackage.bxg
+    public final int g() {
+        return this.e;
+    }
+
+    @Override // defpackage.bxg
+    public final String getPath() {
+        return this.a;
+    }
+
+    public final long h() {
+        return this.i;
+    }
+
+    public final int hashCode() {
+        int iC = zo5.c(this.f, zo5.c(this.e, x05.b(this.d, qt4.g(zo5.c(this.b, this.a.hashCode() * 31, 31), 31, this.c), 31), 31), 31);
+        i6a i6aVar = this.g;
+        int iHashCode = (iC + (i6aVar == null ? 0 : i6aVar.hashCode())) * 31;
+        String str = this.h;
+        return Boolean.hashCode(this.k) + qt4.g(qt4.g((iHashCode + (str != null ? str.hashCode() : 0)) * 31, 31, this.i), 31, this.j);
+    }
+
+    /* JADX WARN: Code duplicated, block: B:144:0x01cc  */
+    /* JADX WARN: Code duplicated, block: B:81:0x010e  */
+    /* JADX WARN: Code duplicated, block: B:9:0x0028  */
+    public final String toString() {
+        String strK;
+        boolean zC = gm0.c();
+        String strK2 = "***";
+        Object obj = this.a;
+        if (zC) {
+            strK = obj.toString();
+        } else if (obj instanceof Collection) {
+            Collection collection = (Collection) obj;
+            if (collection.isEmpty()) {
+                strK = "[]";
+            } else {
+                strK = c0a.k(collection.size(), "[**", "**]");
+            }
+        } else if (obj instanceof Map) {
+            Map map = (Map) obj;
+            strK = map.isEmpty() ? "{}" : c0a.k(map.size(), "{**", "**}");
+        } else if (obj instanceof Object[]) {
+            Object[] objArr = (Object[]) obj;
+            if (objArr.length == 0) {
+                strK = "[]";
+            } else {
+                strK = c0a.k(objArr.length, "[**", "**]");
+            }
+        } else if (obj instanceof int[]) {
+            int[] iArr = (int[]) obj;
+            if (iArr.length == 0) {
+                strK = "[]";
+            } else {
+                strK = c0a.k(iArr.length, "[**", "**]");
+            }
+        } else if (obj instanceof float[]) {
+            float[] fArr = (float[]) obj;
+            if (fArr.length == 0) {
+                strK = "[]";
+            } else {
+                strK = c0a.k(fArr.length, "[**", "**]");
+            }
+        } else if (obj instanceof long[]) {
+            long[] jArr = (long[]) obj;
+            if (jArr.length == 0) {
+                strK = "[]";
+            } else {
+                strK = c0a.k(jArr.length, "[**", "**]");
+            }
+        } else if (obj instanceof double[]) {
+            double[] dArr = (double[]) obj;
+            if (dArr.length == 0) {
+                strK = "[]";
+            } else {
+                strK = c0a.k(dArr.length, "[**", "**]");
+            }
+        } else if (obj instanceof short[]) {
+            short[] sArr = (short[]) obj;
+            if (sArr.length == 0) {
+                strK = "[]";
+            } else {
+                strK = c0a.k(sArr.length, "[**", "**]");
+            }
+        } else if (obj instanceof byte[]) {
+            byte[] bArr = (byte[]) obj;
+            if (bArr.length == 0) {
+                strK = "[]";
+            } else {
+                strK = c0a.k(bArr.length, "[**", "**]");
+            }
+        } else if (obj instanceof char[]) {
+            char[] cArr = (char[]) obj;
+            if (cArr.length == 0) {
+                strK = "[]";
+            } else {
+                strK = c0a.k(cArr.length, "[**", "**]");
+            }
+        } else if (obj instanceof boolean[]) {
+            boolean[] zArr = (boolean[]) obj;
+            if (zArr.length == 0) {
+                strK = "[]";
+            } else {
+                strK = c0a.k(zArr.length, "[**", "**]");
+            }
+        } else {
+            strK = "***";
+        }
+        String strE = v1h.e(this.b);
+        int size = this.d.size();
+        Object obj2 = this.h;
+        if (obj2 == null) {
+            strK2 = "empty";
+        } else {
+            if (gm0.c()) {
+                strK2 = obj2.toString();
+            } else if (obj2 instanceof Collection) {
+                Collection collection2 = (Collection) obj2;
+                if (collection2.isEmpty()) {
+                    strK2 = "[]";
+                } else {
+                    strK2 = c0a.k(collection2.size(), "[**", "**]");
+                }
+            } else if (obj2 instanceof Map) {
+                Map map2 = (Map) obj2;
+                strK2 = map2.isEmpty() ? "{}" : c0a.k(map2.size(), "{**", "**}");
+            } else if (obj2 instanceof Object[]) {
+                Object[] objArr2 = (Object[]) obj2;
+                if (objArr2.length == 0) {
+                    strK2 = "[]";
+                } else {
+                    strK2 = c0a.k(objArr2.length, "[**", "**]");
+                }
+            } else if (obj2 instanceof int[]) {
+                int[] iArr2 = (int[]) obj2;
+                if (iArr2.length == 0) {
+                    strK2 = "[]";
+                } else {
+                    strK2 = c0a.k(iArr2.length, "[**", "**]");
+                }
+            } else if (obj2 instanceof float[]) {
+                float[] fArr2 = (float[]) obj2;
+                if (fArr2.length == 0) {
+                    strK2 = "[]";
+                } else {
+                    strK2 = c0a.k(fArr2.length, "[**", "**]");
+                }
+            } else if (obj2 instanceof long[]) {
+                long[] jArr2 = (long[]) obj2;
+                if (jArr2.length == 0) {
+                    strK2 = "[]";
+                } else {
+                    strK2 = c0a.k(jArr2.length, "[**", "**]");
+                }
+            } else if (obj2 instanceof double[]) {
+                double[] dArr2 = (double[]) obj2;
+                if (dArr2.length == 0) {
+                    strK2 = "[]";
+                } else {
+                    strK2 = c0a.k(dArr2.length, "[**", "**]");
+                }
+            } else if (obj2 instanceof short[]) {
+                short[] sArr2 = (short[]) obj2;
+                if (sArr2.length == 0) {
+                    strK2 = "[]";
+                } else {
+                    strK2 = c0a.k(sArr2.length, "[**", "**]");
+                }
+            } else if (obj2 instanceof byte[]) {
+                byte[] bArr2 = (byte[]) obj2;
+                if (bArr2.length == 0) {
+                    strK2 = "[]";
+                } else {
+                    strK2 = c0a.k(bArr2.length, "[**", "**]");
+                }
+            } else if (obj2 instanceof char[]) {
+                char[] cArr2 = (char[]) obj2;
+                if (cArr2.length == 0) {
+                    strK2 = "[]";
+                } else {
+                    strK2 = c0a.k(cArr2.length, "[**", "**]");
+                }
+            } else if (obj2 instanceof boolean[]) {
+                boolean[] zArr2 = (boolean[]) obj2;
+                if (zArr2.length == 0) {
+                    strK2 = "[]";
+                } else {
+                    strK2 = c0a.k(zArr2.length, "[**", "**]");
+                }
+            }
+            if (strK2 == null) {
+                strK2 = "empty";
+            }
+        }
+        long j = this.j;
+        float fIntBitsToFloat = Float.intBitsToFloat((int) (j >> 32));
+        float fIntBitsToFloat2 = Float.intBitsToFloat((int) (j & 4294967295L));
+        StringBuilder sbQ = qv1.q("\n                Video(\n                    path='", strK, "',\n                    settings=", strE, ",\n                    expirationMs=");
+        c0a.w(sbQ, this.c, ",\n                    layers=", size);
+        zo5.C(this.e, this.f, ",\n                    canvasWidth=", ",\n                    canvasHeight=", sbQ);
+        sbQ.append(",\n                    mediaTransform=");
+        sbQ.append(this.g);
+        sbQ.append(",\n                    previewPath='");
+        sbQ.append(strK2);
+        qt4.z(this.i, "',\n                    durationMs=", ",\n                    trimsFraction=[", sbQ);
+        c0a.u(sbQ, fIntBitsToFloat, ", ", fIntBitsToFloat2, "],\n                    isMuted=");
+        sbQ.append(this.k);
+        sbQ.append("\n                )\n            ");
+        return s5h.x0(sbQ.toString());
+    }
+}

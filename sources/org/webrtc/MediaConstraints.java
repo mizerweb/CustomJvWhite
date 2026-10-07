@@ -1,0 +1,75 @@
+package org.webrtc;
+
+import defpackage.qv1;
+import defpackage.zo5;
+import java.util.ArrayList;
+import java.util.List;
+
+/* JADX INFO: loaded from: classes3.dex */
+public class MediaConstraints {
+    public final List<KeyValuePair> mandatory = new ArrayList();
+    public final List<KeyValuePair> optional = new ArrayList();
+
+    public static class KeyValuePair {
+        private final String key;
+        private final String value;
+
+        public KeyValuePair(String str, String str2) {
+            this.key = str;
+            this.value = str2;
+        }
+
+        public boolean equals(Object obj) {
+            if (this == obj) {
+                return true;
+            }
+            if (obj != null && getClass() == obj.getClass()) {
+                KeyValuePair keyValuePair = (KeyValuePair) obj;
+                if (this.key.equals(keyValuePair.key) && this.value.equals(keyValuePair.value)) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public String getKey() {
+            return this.key;
+        }
+
+        public String getValue() {
+            return this.value;
+        }
+
+        public int hashCode() {
+            return this.value.hashCode() + this.key.hashCode();
+        }
+
+        public String toString() {
+            return zo5.p(this.key, ": ", this.value);
+        }
+    }
+
+    private static String stringifyKeyValuePairList(List<KeyValuePair> list) {
+        StringBuilder sb = new StringBuilder("[");
+        for (KeyValuePair keyValuePair : list) {
+            if (sb.length() > 1) {
+                sb.append(", ");
+            }
+            sb.append(keyValuePair.toString());
+        }
+        sb.append("]");
+        return sb.toString();
+    }
+
+    public List<KeyValuePair> getMandatory() {
+        return this.mandatory;
+    }
+
+    public List<KeyValuePair> getOptional() {
+        return this.optional;
+    }
+
+    public String toString() {
+        return qv1.l("mandatory: ", stringifyKeyValuePairList(this.mandatory), ", optional: ", stringifyKeyValuePairList(this.optional));
+    }
+}

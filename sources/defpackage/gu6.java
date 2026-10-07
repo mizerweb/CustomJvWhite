@@ -1,0 +1,10 @@
+package defpackage;
+
+import ru.ok.tamtam.exception.IssueKeyException;
+
+/* JADX INFO: loaded from: classes3.dex */
+class gu6 extends IssueKeyException {
+    public gu6(String str, String str2, Throwable th) {
+        super(str, str2, th);
+    }
+}

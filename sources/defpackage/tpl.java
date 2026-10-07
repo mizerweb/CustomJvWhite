@@ -1,0 +1,51 @@
+package defpackage;
+
+import java.io.IOException;
+import java.util.HashMap;
+
+/* JADX INFO: loaded from: classes2.dex */
+final class tpl implements zpb {
+    static final tpl a = new tpl();
+    private static final jp6 b;
+    private static final jp6 c;
+    private static final jp6 d;
+    private static final jp6 e;
+    private static final jp6 f;
+
+    static {
+        d6l d6lVarK = ewi.k(1);
+        HashMap map = new HashMap();
+        map.put(d6lVarK.annotationType(), d6lVarK);
+        b = new jp6("inferenceCommonLogEvent", p.h(map));
+        d6l d6lVarK2 = ewi.k(2);
+        HashMap map2 = new HashMap();
+        map2.put(d6lVarK2.annotationType(), d6lVarK2);
+        c = new jp6("options", p.h(map2));
+        d6l d6lVarK3 = ewi.k(3);
+        HashMap map3 = new HashMap();
+        map3.put(d6lVarK3.annotationType(), d6lVarK3);
+        d = new jp6("detectedBarcodeFormats", p.h(map3));
+        d6l d6lVarK4 = ewi.k(4);
+        HashMap map4 = new HashMap();
+        map4.put(d6lVarK4.annotationType(), d6lVarK4);
+        e = new jp6("detectedBarcodeValueTypes", p.h(map4));
+        d6l d6lVarK5 = ewi.k(5);
+        HashMap map5 = new HashMap();
+        map5.put(d6lVarK5.annotationType(), d6lVarK5);
+        f = new jp6("imageInfo", p.h(map5));
+    }
+
+    private tpl() {
+    }
+
+    @Override // defpackage.v76
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) throws IOException {
+        t4m t4mVar = (t4m) obj;
+        aqb aqbVar = (aqb) obj2;
+        aqbVar.a(b, t4mVar.d());
+        aqbVar.a(c, t4mVar.e());
+        aqbVar.a(d, t4mVar.a());
+        aqbVar.a(e, t4mVar.b());
+        aqbVar.a(f, t4mVar.c());
+    }
+}

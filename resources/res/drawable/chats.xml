@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_chats__0_res_0x7f0800ea">
+    <target
+        android:name="shape"
+        android:animation="@drawable/_chats__1_res_0x7f0800eb"/>
+    <target
+        android:name="_R_G_L_1_G_N_3_T_1"
+        android:animation="@drawable/_chats__6_res_0x7f080122"/>
+    <target
+        android:name="_R_G_L_1_G_N_3_T_1"
+        android:animation="@drawable/_chats__11_res_0x7f0800ed"/>
+    <target
+        android:name="_R_G_L_1_G_N_3_T_1"
+        android:animation="@drawable/_chats__18_res_0x7f0800f4"/>
+    <target
+        android:name="_R_G_L_0_G_D_0_P_0_G_0_T_1"
+        android:animation="@drawable/_chats__23_res_0x7f0800fa"/>
+    <target
+        android:name="_R_G_L_0_G_D_1_P_0_G_0_T_1"
+        android:animation="@drawable/_chats__30_res_0x7f080102"/>
+    <target
+        android:name="_R_G_L_0_G_D_2_P_0_G_0_T_1"
+        android:animation="@drawable/_chats__37_res_0x7f080109"/>
+    <target
+        android:name="_R_G_L_0_G_T_1"
+        android:animation="@drawable/_chats__44_res_0x7f080111"/>
+    <target
+        android:name="_R_G_L_0_G_T_1"
+        android:animation="@drawable/_chats__49_res_0x7f080116"/>
+    <target
+        android:name="_R_G_L_0_G_T_1"
+        android:animation="@drawable/_chats__56_res_0x7f08011e"/>
+    <target
+        android:name="time_group"
+        android:animation="@drawable/_chats__61_res_0x7f080124"/>
+</animated-vector>

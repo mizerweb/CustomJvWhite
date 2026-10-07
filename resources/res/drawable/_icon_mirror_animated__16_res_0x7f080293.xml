@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator
+        android:interpolator="@drawable/_icon_mirror_animated__17_res_0x7f080294"
+        android:duration="167"
+        android:startOffset="0"
+        android:propertyName="translateXY"
+        android:pathData="M 18.242,12.003C 18.242,12.003 11.989,12.003 11.989,12.003"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+    <objectAnimator
+        android:interpolator="@drawable/_icon_mirror_animated__18_res_0x7f080295"
+        android:duration="133"
+        android:startOffset="167"
+        android:propertyName="translateXY"
+        android:pathData="M 11.989,12.003C 11.989,12.003 18.242,12.003 18.242,12.003"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+    <objectAnimator
+        android:interpolator="@drawable/_icon_mirror_animated__19_res_0x7f080296"
+        android:duration="150"
+        android:startOffset="300"
+        android:propertyName="translateXY"
+        android:pathData="M 18.242,12.003C 18.242,12.003 17.616,12.003 17.616,12.003"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+    <objectAnimator
+        android:interpolator="@drawable/_icon_mirror_animated__20_res_0x7f080298"
+        android:duration="217"
+        android:startOffset="450"
+        android:propertyName="translateXY"
+        android:pathData="M 17.616,12.003C 17.616,12.003 18.242,12.003 18.242,12.003"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+</set>
